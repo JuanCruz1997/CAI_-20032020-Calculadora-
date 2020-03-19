@@ -14,6 +14,7 @@ namespace Calculadora
             float b = 0;
             string operacion = "";
             string decision = "";
+            int mostrar = 2;
             List<float> resultados = new List<float>();
             do
             {
@@ -72,7 +73,7 @@ namespace Calculadora
                     }
                 } while (decision != "S" && decision != "N");
             } while (decision != "N");
-            if (resultados.Count < 2)
+            if (resultados.Count < mostrar)
             {
                 Console.WriteLine("Para mostrar la lista de resultados se requiere haber realizado al menos 2 operaciones.");
             }
